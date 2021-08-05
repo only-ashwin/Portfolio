@@ -26,29 +26,9 @@
 
 html {
   box-sizing: border-box;
-
-  /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
-*/
-
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em
-*/
 
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
@@ -411,31 +391,6 @@ footer i {
         Tecnical Documentation Page
         <span class="code">/&gt;</span>
       </p>
-    </a>
-    <a href="" target="_blank" class="project project-tile">
-      <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="project">
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Map Data Across the Globe
-        <span class="code">/&gt;</span>
-      </p>
-    </a>
-    <a href="" target="_blank" class="project project-tile">
-      <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="project">
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Wikipedia Viewer
-        <span class="code">/&gt;</span>
-      </p>
-    </a>
-    <a href="" target="_blank" class="project project-tile">
-      <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project">
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Tic Tac Toe Game
-        <span class="code">/&gt;</span>
-      </p>
-    </a>
   </div>
 
   <a href="" class="btn btn-show-all" target="_blank">Show all<i class="fas fa-chevron-right"></i></a>
@@ -468,7 +423,7 @@ footer i {
     Ashwin Bansal's Personal Portfolio
   </p>
   <p>
-    © Created for
+    © Created by
     <a href="" target="_blank">Ashwin Bansal<i class=""></i></a>
   </p>
 </footer>
